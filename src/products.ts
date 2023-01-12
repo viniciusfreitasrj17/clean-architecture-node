@@ -20,4 +20,8 @@ export default class Product {
     }
     this._cost = cost
   }
+
+  get salesPrice() {
+    return this._cost * 3
+  }
 }

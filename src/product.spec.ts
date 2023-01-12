@@ -19,5 +19,11 @@ describe('products unit test', () => {
     product.cost = 100
     expect(product.cost).toBe(100)
   })
-      
+  
+  it('should set the salesPrice by 3 times the cost os the product', () => {
+    const product = new Product('Product 1')
+    product.cost = 100
+    expect(product.salesPrice).toBe(300)
+  })
+  
 })
