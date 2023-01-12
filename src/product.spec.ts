@@ -13,4 +13,11 @@ describe('products unit test', () => {
       product.cost = -1
     }).toThrowError('Cost cannot be negative')
   })
+
+  it('should set the cost of a product', () => {
+    const product = new Product('Product 1')
+    product.cost = 100
+    expect(product.cost).toBe(100)
+  })
+      
 })

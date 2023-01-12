@@ -10,8 +10,8 @@ export default class Product {
     return this._name
   }
 
-  set name(name: string) {
-    this._name = name
+  get cost() {
+    return this._cost
   }
 
   set cost(cost:number) {
