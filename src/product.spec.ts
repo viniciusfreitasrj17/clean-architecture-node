@@ -6,4 +6,11 @@ describe('products unit test', () => {
     const product = new Product(name)
     expect(product.name).toBe(name)
   })
+
+  it('should throw an error if cost is negative', () => {
+    const product = new Product('Product 1')
+    expect(() => {
+      product.cost = -1
+    }).toThrowError('Cost cannot be negative')
+  })
 })
