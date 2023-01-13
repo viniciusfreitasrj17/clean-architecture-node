@@ -4,23 +4,29 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "test:coverage": "jest --coverage",
+    "test": "jest --all --verbose --detectOpenHandles --runInBand --forceExit",
+    "test:watch": "jest --verbose --detectOpenHandles --runInBand --forceExit --watchAll",
+    "test:coverage": "jest --coverage --verbose --detectOpenHandles --runInBand --forceExit",
+    "test:clear": "NODE_ENV=test jest --clearCache",
     "build": "tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/express": "^4.17.15",
     "@types/jest": "^29.2.5",
     "@types/node": "^18.11.18",
+    "@types/supertest": "^2.0.12",
     "@types/validator": "^13.7.10",
     "jest": "^29.3.1",
     "sqlite3": "^5.1.4",
+    "supertest": "^6.3.3",
     "ts-jest": "^29.0.4",
     "typescript": "^4.9.4"
   },
   "dependencies": {
+    "express": "^4.18.2",
     "reflect-metadata": "^0.1.13",
     "sequelize": "^6.28.0",
     "sequelize-typescript": "^2.1.5"
