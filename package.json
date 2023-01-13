@@ -8,7 +8,8 @@
     "test:watch": "jest --verbose --detectOpenHandles --runInBand --forceExit --watchAll",
     "test:coverage": "jest --coverage --verbose --detectOpenHandles --runInBand --forceExit",
     "test:clear": "NODE_ENV=test jest --clearCache",
-    "build": "tsc"
+    "build": "tsc",
+    "dev": "./node_modules/nodemon/bin/nodemon.js src/web/server.ts"
   },
   "keywords": [],
   "author": "",
@@ -20,9 +21,11 @@
     "@types/supertest": "^2.0.12",
     "@types/validator": "^13.7.10",
     "jest": "^29.3.1",
+    "nodemon": "^2.0.20",
     "sqlite3": "^5.1.4",
     "supertest": "^6.3.3",
     "ts-jest": "^29.0.4",
+    "ts-node": "^10.9.1",
     "typescript": "^4.9.4"
   },
   "dependencies": {
