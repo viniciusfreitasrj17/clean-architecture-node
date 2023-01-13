@@ -1,9 +1,11 @@
 export default class Product {
   _name: string;
   _cost!: number;
+  _id: number;
 
   constructor(name: string) {
     this._name = name
+    this._id = Math.ceil(Math.random() * 10 ** 15)
   }
 
   get name() {
@@ -23,5 +25,9 @@ export default class Product {
 
   get salesPrice() {
     return this._cost * 3
+  }
+
+  get id() {
+    return this._id
   }
 }

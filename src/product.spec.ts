@@ -25,5 +25,9 @@ describe('products unit test', () => {
     product.cost = 100
     expect(product.salesPrice).toBe(300)
   })
-  
+
+  it('should have an id', () => {
+    const product = new Product('Product 1')
+    expect(product.id).toBeDefined()
+  })
 })
