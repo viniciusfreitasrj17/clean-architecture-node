@@ -1,10 +1,10 @@
 import Product from "../../entities/products";
 import { CreateProductInputDto, CreateProductOutputDto } from "./create-product.dto";
-import ProductGateway from '../../gateways/product.gateway'
+import ProductRepositoryProtocol from './product.protocol'
 
 export default class CreateProductUseCase {
   constructor(
-    private _productGateway: ProductGateway
+    private _productRepositoryProtocol: ProductRepositoryProtocol
   ) {}
 
   async execute(
@@ -13,7 +13,7 @@ export default class CreateProductUseCase {
     const product = new Product(input.name)
     product.cost = input.cost
 
-    await this._productGateway.create(product)
+    await this._productRepositoryProtocol.create(product)
 
     return {
       id: product.id,

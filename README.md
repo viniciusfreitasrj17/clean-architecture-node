@@ -10,11 +10,11 @@
 
 ### In Application Business Rules
 
-- Has Create Product UseCase
+- Has Create Product UseCase, Create Product Dto and Product Repository Protocol
 
 ### In Interface Adapters
 
-- Has Gateway Layer to create the product protocol
+- Has Controller Layer to create the product
 
 ### And, in Frameworks & Drivers
 

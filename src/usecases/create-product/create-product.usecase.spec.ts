@@ -13,12 +13,12 @@ describe('create product unit test', () => {
       name: 'Product 1',
       cost: 100
     }
-    const productGateway = () => {
+    const productRepositoryProtocol = () => {
       return {
         create: jest.fn(),
       }
     }
-    const createProductUseCase = new CreateProductUseCase(productGateway())
+    const createProductUseCase = new CreateProductUseCase(productRepositoryProtocol())
 
     // Act
     const result = await createProductUseCase.execute(input)
