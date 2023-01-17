@@ -1,4 +1,4 @@
-import Product from "./products"
+import Product from "."
 
 describe('products unit test', () => {
   it('should have a name', () => {

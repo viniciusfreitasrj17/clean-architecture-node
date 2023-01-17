@@ -1,5 +1,5 @@
 import { Sequelize } from "sequelize-typescript"
-import Product from "../entities/products"
+import Product from "../../domains/Product"
 import ProductModel from "./product.model"
 import ProductRepository from "./product.repository"
 

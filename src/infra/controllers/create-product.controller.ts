@@ -1,5 +1,5 @@
-import CreateProductUseCase from "../usecases/create-product/create-product.usecase"
-import { CreateProductInputDto } from "../usecases/create-product/create-product.dto"
+import CreateProductUseCase from "../../app/usecases/create-product/create-product.usecase"
+import { CreateProductInputDto } from "../../app/usecases/create-product/create-product.dto"
 
 export class CreateProductController {
   constructor(

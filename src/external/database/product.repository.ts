@@ -1,5 +1,5 @@
-import Product from "../entities/products";
-import ProductRepositoryProtocol from "../usecases/create-product/product.protocol";
+import Product from "../../domains/Product";
+import ProductRepositoryProtocol from "../../app/usecases/create-product/product.protocol";
 import ProductModel from "./product.model";
 
 export default class ProductRepository implements ProductRepositoryProtocol {

@@ -1,4 +1,4 @@
-import Product from "../../entities/products";
+import Product from "../../../domains/Product";
 import { CreateProductInputDto, CreateProductOutputDto } from "./create-product.dto";
 import ProductRepositoryProtocol from './product.protocol'
 

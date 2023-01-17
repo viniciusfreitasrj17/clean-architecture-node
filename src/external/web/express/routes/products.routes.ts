@@ -1,7 +1,7 @@
 import { Router, Response, Request } from 'express'
-import { CreateProductController } from '../../../controllers/create-product.controller'
+import { CreateProductController } from '../../../../infra/controllers/create-product.controller'
 import ProductRepository from '../../../database/product.repository'
-import CreateProductUseCase from '../../../usecases/create-product/create-product.usecase'
+import CreateProductUseCase from '../../../../app/usecases/create-product/create-product.usecase'
 
 export const productRouter = Router()
 
