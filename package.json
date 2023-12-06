@@ -9,7 +9,7 @@
     "test:coverage": "jest --coverage --verbose --detectOpenHandles --runInBand --forceExit",
     "test:clear": "NODE_ENV=test jest --clearCache",
     "build": "tsc",
-    "dev": "./node_modules/nodemon/bin/nodemon.js src/web/server.ts"
+    "dev": "./node_modules/nodemon/bin/nodemon.js src/external/web/server.ts"
   },
   "keywords": [],
   "author": "",

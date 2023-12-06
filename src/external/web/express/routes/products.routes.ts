@@ -14,3 +14,9 @@ const createProductController = new CreateProductController(
 productRouter.post('/', async (req, res) =>  
   createProductController.execute(req, res)
 )
+
+productRouter.get('/', async (req, res) =>  
+  {
+    return res.json({ "message": "OK" }).status(200)
+  }
+)
